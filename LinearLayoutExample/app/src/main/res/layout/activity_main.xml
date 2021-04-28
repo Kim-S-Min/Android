@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!-- normal.xml 연결 -->
+	<Button
+		android:id="@+id/button01"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="일반적인 경우"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:onClick="onButton1Clicked"
+	/>
+
+	<!-- baseline.xml 연결 -->
+	<Button
+		android:id="@+id/button05"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="baseline 사용하기"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:onClick="onButton5Clicked"
+		/>
+
+	<!-- gravity.xml 연결 -->
+	<Button
+		android:id="@+id/button03"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="gravity 사용하기"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:onClick="onButton3Clicked"
+	/>
+
+	<!-- gravity01.xml 연결 -->
+	<Button
+		android:id="@+id/button06"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="gravity : left|top"
+		android:textSize="14dp"
+		android:textStyle="bold"
+		android:onClick="onButton6Clicked"
+		/>
+
+	<!-- gravity02.xml 연결 -->
+	<Button
+		android:id="@+id/button07"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="gravity : center_vertical|center_horizontal"
+		android:textSize="14dp"
+		android:textStyle="bold"
+		android:onClick="onButton7Clicked"
+		/>
+
+	<!-- gravity03.xml 연결 -->
+	<Button
+		android:id="@+id/button08"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="gravity : right|bottom"
+		android:textSize="14dp"
+		android:textStyle="bold"
+		android:onClick="onButton8Clicked"
+		/>
+
+	<!-- padding.xml 연결 -->
+	<Button
+		android:id="@+id/button02"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="공간 사용하기"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:onClick="onButton2Clicked"
+		/>
+
+	<!-- weight.xml 연결 -->
+	<Button
+		android:id="@+id/button04"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="weight 사용하기"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:onClick="onButton4Clicked"
+		/>
+
+	<!-- Java 코딩으로 UI 구성 -->
+	<Button
+		android:id="@+id/button09"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="자바 코드로 만들기"
+		android:textSize="16dp"
+		android:textStyle="bold"
+		android:onClick="onButton9Clicked"
+		/>
+
+</LinearLayout>
