@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helloandroid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloAndroid">
+        <activity android:name=".imlicitintent"></activity>
+        <!-- 어플리케이션의 구성 요소 -->
+        <activity android:name=".MainActivity">
+
+            <!-- Activity는 화면 1개 -->
+            <intent-filter>
+
+                <!-- android.intent.action.MAIN : 앱 실행시 처음 표시되는 화면 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- android.intent.category.LAUNCHER: 앱 드로어에 표시되는 화면 -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Widget01</string>
+    <string name="spinner_prompt">Seasons</string>
+</resources>
