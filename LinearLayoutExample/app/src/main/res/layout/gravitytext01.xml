@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+	<!-- Layout_gravity: 부모 레이아웃 내부에서의 위젯 배치 중력 -->
+	<!-- gravity: 위젯 내부에서 컨텐츠를 출력할 중력 -->
 	<TextView  
 		android:id="@+id/button01"
 	    android:layout_width="match_parent" 
