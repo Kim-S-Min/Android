@@ -1,0 +1,3 @@
+include ':EventExample'
+include ':app'
+rootProject.name = "AndroidStudy"
