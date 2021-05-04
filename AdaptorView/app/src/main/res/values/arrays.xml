@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location">
+        <item>California</item>
+        <item>Texas</item>
+        <item>Arizona</item>
+        <item>New England</item>
+        <item>New York</item>
+        <item>Banana</item>
+        <item>Seoul</item>
+        <item>Busan</item>
+        <item>Goyang</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
