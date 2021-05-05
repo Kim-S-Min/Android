@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
             Toast t = Toast.makeText(this, "HOME AS UP CLICK", Toast.LENGTH_SHORT);
             t.show();

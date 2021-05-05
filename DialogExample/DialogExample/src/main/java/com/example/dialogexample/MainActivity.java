@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     DialogInterface.OnCancelListener dialogListener = new DialogInterface.OnCancelListener() {
         @Override
         public void onCancel(DialogInterface dialog) {
+            int which = 0;
             if (dialog == customDialog && which == DialogInterface.BUTTON_POSITIVE) {    //  버튼이 positive인지 확인하는 것 (negertive가 아니어야 한다)
                 showToast("커스텀 다이얼로그 확인 click....");
             } else if (dialog == listDialog) {
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             DatePickerDialog dateDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                    showToast(year + ":" + (monthOfYear+1) + ":" + dayOfMonth);
+                    showToast(year + ":" + (month+1) + ":" + dayOfMonth);
                 }
             }, year, month, day);
             dateDialog.show();

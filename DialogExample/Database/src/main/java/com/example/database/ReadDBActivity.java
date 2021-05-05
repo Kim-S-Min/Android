@@ -13,8 +13,8 @@ public class ReadDBActivity extends AppCompatActivity {
         super.onCreate(savedInstaceState);
         setContentView(R.layout.activity_read_db);
 
-        TextView titleView = findViewById(R.id.);
-        TextView contentView = findViewById(R.id.);
+        TextView titleView = findViewById(R.id.read_title);
+        TextView contentView = findViewById(R.id.read_content);
 
         DBHelper helper = new DBHelper(this);
         SQLiteDatabase db = helper.getWritableDatabase();

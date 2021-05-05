@@ -4,41 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ArrayAdaptor Test"
+        android:layout_height="wrap_content"
+        android:text="ArrayAdapter Test"
         android:textStyle="bold" />
-
     <ListView
+        android:id="@+id/main_listview_array"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/main_listView_array" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SimpleAdaptor Test"
+        android:layout_height="wrap_content"
+        android:text="SimpleAdapter Test"
         android:textStyle="bold" />
-
     <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/main_listView_simple" />
+        android:id="@+id/main_listview_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="CursorAdaptor Test"
+        android:layout_height="wrap_content"
+        android:text="CursorAdapter Test"
         android:textStyle="bold" />
-
     <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/main_listView_cursor" />
-
+        android:id="@+id/main_listview_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

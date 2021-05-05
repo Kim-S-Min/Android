@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         db.execSQL("insert into tb_memo (title, content) values (?, ?)", new String[]{title, content});
         db.close();
 
-        Intent intent =
+        Intent intent = new Intent(this, ReadDBActivity.class);
+        startActivity(intent);
     }
 }

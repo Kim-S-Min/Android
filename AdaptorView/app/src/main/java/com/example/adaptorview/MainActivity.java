@@ -1,6 +1,7 @@
 package com.example.adaptorview;
 
 import androidx.appcompat.app.AppCompatActivity;
+///import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -26,10 +27,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView arrayView = findViewById(R.id.main_listView_array);
+        ListView arrayView = findViewById(R.id.main_listview_array);
         arrayView.setOnItemClickListener(this);
-        ListView simpleView = findViewById(R.id.main_listView_simple);
-        ListView cursorView = findViewById(R.id.main_listView_cursor);
+        ListView simpleView = findViewById(R.id.main_listview_simple);
+        ListView cursorView = findViewById(R.id.main_listview_cursor);
 
         arrayDatas = getResources().getStringArray(R.array.location);
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayDatas);
@@ -37,9 +38,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         ArrayList<HashMap<String, String>> simpleDatas = new ArrayList<>();
         DBHelper helper = new DBHelper(this);
-        SQLiteDatabase db = helper.getReadableDatabase();
+        SQLiteDatabase db = helper.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from db_data", null);
-
         while (cursor.moveToNext()) {
             HashMap<String, String> map = new HashMap<>();
             map.put("name", cursor.getString(1));
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
 
         SimpleAdapter adapter = new SimpleAdapter(this, simpleDatas, android.R.layout.simple_list_item_2,
-                new String[]{"name", "contnet"}, new int[]{android.R.id.text1, android.R.id.text2});
+                new String[]{"name", "content"}, new int[]{android.R.id.text1, android.R.id.text2});
         simpleView.setAdapter(adapter);
 
         CursorAdapter cursorAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_2,
@@ -57,10 +57,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         cursorView.setAdapter(cursorAdapter);
     }
-
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id){
         Toast t = Toast.makeText(this, arrayDatas[position], Toast.LENGTH_SHORT);
     }
-
 }
