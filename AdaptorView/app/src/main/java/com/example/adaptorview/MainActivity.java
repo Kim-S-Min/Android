@@ -1,7 +1,7 @@
 package com.example.adaptorview;
 
 import androidx.appcompat.app.AppCompatActivity;
-///import androidx.cursoradapter.widget.SimpleCursorAdapter;
+//import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
